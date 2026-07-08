@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>DSAProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Daily_Study_Challenge</module>
+        <module>UserManagement</module>
+        <module>Recommendations</module>
+        <module>Resource_Sharing</module>
+        <module>StudyGroups</module>
+        <module>Activity_Feed</module>
+        <module>Leaderboard</module>
+        <module>DiscussionPosts</module>
+        <module>SearchFunctionality</module>
+        <module>UndoRedo</module>
+        <module>PrivateChat</module>
+        <module>PollsAndQuizzes</module>
+        <module>Notifications</module>
+        <module>GroupChat</module>
+        <module>MainProject</module>
+        <module>GUI_Classes</module>
+
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>io.github.spannm</groupId>
+            <artifactId>ucanaccess</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>21.0.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>21.0.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

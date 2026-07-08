@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Activity_Feed/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Activity_Feed/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Daily_Study_Challenge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Daily_Study_Challenge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DiscussionPosts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DiscussionPosts/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GUI_Classes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GUI_Classes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GroupChat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GroupChat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Leaderboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Leaderboard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MainProject/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MainProject/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Notifications/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Notifications/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PollsAndQuizzes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PollsAndQuizzes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrivateChat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrivateChat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Recommendations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Recommendations/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Resource_Sharing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Resource_Sharing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SearchFunctionality/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SearchFunctionality/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudyGroups/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudyGroups/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TaggingPosts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TaggingPosts/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UndoRedo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UndoRedo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserManagement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserManagement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
