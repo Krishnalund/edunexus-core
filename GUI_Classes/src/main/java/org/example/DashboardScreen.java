@@ -117,18 +117,6 @@ public class DashboardScreen extends JFrame {
         contentPanel.add(btnRecommendations, gbc);
 
         // Row 4
-        // gbc.gridx = 0; gbc.gridy = 3;
-        // btnProfile = UIHelper.createDashboardButton("⚙️ Profile / Settings");
-        // contentPanel.add(btnProfile, gbc);
-
-        // gbc.gridx = 1;
-        // btnLogout = UIHelper.createDashboardButton("Logout");
-        // btnLogout.setForeground(UIConstants.ERROR);
-        // contentPanel.add(btnLogout, gbc);
-
-        // mainPanel.add(contentPanel, BorderLayout.CENTER);
-       
-
         gbc.gridx = 0; gbc.gridy = 3; gbc.gridwidth = 3;
         btnProfile = UIHelper.createDashboardButton("Profile / Settings");
         btnProfile.setIcon(UIHelper.createDotIcon(UIConstants.TEXT_SECONDARY));
