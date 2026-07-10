@@ -218,4 +218,17 @@ public class UIHelper {
         scrollPane.setBorder(BorderFactory.createLineBorder(UIConstants.BORDER_MEDIUM, 1));
         return scrollPane;
     }
+    public static Icon createDotIcon(Color color) {
+    return new Icon() {
+        public void paintIcon(Component c, Graphics g, int x, int y) {
+            Graphics2D g2 = (Graphics2D) g.create();
+            g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g2.setColor(color);
+            g2.fillOval(x, y, getIconWidth(), getIconHeight());
+            g2.dispose();
+        }
+        public int getIconWidth() { return 14; }
+        public int getIconHeight() { return 14; }
+    };
+}
 }

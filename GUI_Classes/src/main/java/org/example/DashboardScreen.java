@@ -27,7 +27,8 @@ public class DashboardScreen extends JFrame {
         headerPanel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         
         JLabel title = new JLabel("Study Platform Dashboard");
-        title.setFont(new Font("Segoe UI", Font.BOLD, 32));
+        //title.setFont(new Font("Segoe UI", Font.BOLD, 32));
+        title.setFont(UIConstants.TITLE_FONT);
         title.setForeground(Color.WHITE);
         
         JLabel welcomeLabel = new JLabel("Welcome, " + context.currentUser.getUsername() + "!");
@@ -52,54 +53,102 @@ public class DashboardScreen extends JFrame {
         // Row 1
         gbc.gridx = 0; gbc.gridy = 0;
         btnGroups = UIHelper.createDashboardButton("Study Groups");
+        btnGroups.setIcon(UIHelper.createDotIcon(UIConstants.PRIMARY));
+        btnGroups.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnGroups.setIconTextGap(12);
         contentPanel.add(btnGroups, gbc);
 
         gbc.gridx = 1;
         btnDiscussion = UIHelper.createDashboardButton("Discussion Posts");
+        btnDiscussion.setIcon(UIHelper.createDotIcon(UIConstants.PRIMARY));
+        btnDiscussion.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnDiscussion.setIconTextGap(12);
         contentPanel.add(btnDiscussion, gbc);
 
         gbc.gridx = 2;
         btnResources = UIHelper.createDashboardButton("Resources");
+        btnResources.setIcon(UIHelper.createDotIcon(UIConstants.PRIMARY));
+        btnResources.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnResources.setIconTextGap(12);
         contentPanel.add(btnResources, gbc);
 
         // Row 2
         gbc.gridx = 0; gbc.gridy = 1;
         btnQuizzes = UIHelper.createDashboardButton("Polls & Quizzes");
+        btnQuizzes.setIcon(UIHelper.createDotIcon(UIConstants.ACCENT));
+        btnQuizzes.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnQuizzes.setIconTextGap(12);
         contentPanel.add(btnQuizzes, gbc);
 
         gbc.gridx = 1;
         btnChallenges = UIHelper.createDashboardButton("Daily Challenges");
+        btnChallenges.setIcon(UIHelper.createDotIcon(UIConstants.ACCENT));
+        btnChallenges.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnChallenges.setIconTextGap(12);
         contentPanel.add(btnChallenges, gbc);
 
         gbc.gridx = 2;
         btnLeaderboard = UIHelper.createDashboardButton("Leaderboard");
+        btnLeaderboard.setIcon(UIHelper.createDotIcon(UIConstants.ACCENT));
+        btnLeaderboard.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnLeaderboard.setIconTextGap(12);
         contentPanel.add(btnLeaderboard, gbc);
 
         // Row 3
         gbc.gridx = 0; gbc.gridy = 2;
         btnNotifications = UIHelper.createDashboardButton("Notifications");
+        btnNotifications.setIcon(UIHelper.createDotIcon(UIConstants.WARNING));
+        btnNotifications.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnNotifications.setIconTextGap(12);
         contentPanel.add(btnNotifications, gbc);
 
         gbc.gridx = 1;
         btnSearch = UIHelper.createDashboardButton("Search");
+        btnSearch.setIcon(UIHelper.createDotIcon(UIConstants.WARNING));
+        btnSearch.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnSearch.setIconTextGap(12);
         contentPanel.add(btnSearch, gbc);
 
         gbc.gridx = 2;
         btnRecommendations = UIHelper.createDashboardButton("Recommendations");
+        btnRecommendations.setIcon(UIHelper.createDotIcon(UIConstants.WARNING));
+        btnRecommendations.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnRecommendations.setIconTextGap(12);
         contentPanel.add(btnRecommendations, gbc);
 
         // Row 4
-        gbc.gridx = 0; gbc.gridy = 3;
-        btnProfile = UIHelper.createDashboardButton("Profile / Settings");
-        contentPanel.add(btnProfile, gbc);
+        // gbc.gridx = 0; gbc.gridy = 3;
+        // btnProfile = UIHelper.createDashboardButton("⚙️ Profile / Settings");
+        // contentPanel.add(btnProfile, gbc);
 
-        gbc.gridx = 1;
-        btnLogout = UIHelper.createDashboardButton("Logout");
-        btnLogout.setForeground(UIConstants.ERROR);
-        contentPanel.add(btnLogout, gbc);
+        // gbc.gridx = 1;
+        // btnLogout = UIHelper.createDashboardButton("Logout");
+        // btnLogout.setForeground(UIConstants.ERROR);
+        // contentPanel.add(btnLogout, gbc);
+
+        // mainPanel.add(contentPanel, BorderLayout.CENTER);
+       
+
+        gbc.gridx = 0; gbc.gridy = 3; gbc.gridwidth = 3;
+        btnProfile = UIHelper.createDashboardButton("Profile / Settings");
+        btnProfile.setIcon(UIHelper.createDotIcon(UIConstants.TEXT_SECONDARY));
+        btnProfile.setHorizontalTextPosition(SwingConstants.RIGHT);
+        btnProfile.setIconTextGap(12);
+        contentPanel.add(btnProfile, gbc);
+        gbc.gridwidth = 1;
 
         mainPanel.add(contentPanel, BorderLayout.CENTER);
+        // Logout — separated footer, visually distinct
+        JPanel footerPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        footerPanel.setBackground(UIConstants.BG_PRIMARY);
+        footerPanel.setBorder(BorderFactory.createEmptyBorder(0, 30, 20, 30));
 
+        btnLogout = UIHelper.createDashboardButton("Logout");
+        btnLogout.setBackground(new Color(255, 235, 235));
+        btnLogout.setForeground(UIConstants.ERROR);
+        footerPanel.add(btnLogout);
+        mainPanel.add(footerPanel, BorderLayout.SOUTH);
+        
         // ALL ACTION LISTENERS - FUNCTIONALITY PRESERVED
         btnGroups.addActionListener(e -> {
             new studyGroupsScreen(context).setVisible(true);
